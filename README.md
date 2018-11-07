@@ -2,14 +2,14 @@
 Personal Project.
 
 NEST
-Nurture
-Expenses
-Schedule
-Trust/Time
+- Nurture
+- Expenses
+- Schedule
+- Trust/Time
 
-MVP
+# MVP
 
-Child
+## Child
 Add child
 - Profile:
 - Parents are...
@@ -19,7 +19,7 @@ Add child
 Remove child
 Update child
 
-Parent
+## Parent
 Add parent
 - Profile:
 - Children are...
@@ -29,7 +29,7 @@ Add parent
 Remove adult 
 Update adult
 
-Schedule
+## Schedule
 Add schedule
 - to child
 - to parent
@@ -40,9 +40,9 @@ Update schedule
 - of child
 - of parent
 
-STRETCHES
+# STRETCHES
 
-Caregiver 
+_Caregiver 
 Add caregiver
 - Profile:
 - Children
@@ -51,7 +51,7 @@ Add caregiver
 Remove caregiver
 Update caregiver
 
-Expenses
+_Expenses
 Add expense
 - for Child/ren
 - Activity
