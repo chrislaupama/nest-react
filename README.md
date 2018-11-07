@@ -43,19 +43,19 @@ Update schedule
 # STRETCHES
 
 _Caregiver_
-Add caregiver
+- Add caregiver
 - Profile:
 - Children
 - Contact details
 - Schedule
-Remove caregiver
-Update caregiver
+- Remove caregiver
+- Update caregiver
 
 _Expenses_
-Add expense
+- Add expense
 - for Child/ren
 - Activity
 - Frequency (if needed)
 - for Adult/s 
-Remove expense
-Update expense
+- Remove expense
+- Update expense
