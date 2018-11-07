@@ -42,7 +42,7 @@ Update schedule
 
 # STRETCHES
 
-_Caregiver 
+_Caregiver_
 Add caregiver
 - Profile:
 - Children
@@ -51,7 +51,7 @@ Add caregiver
 Remove caregiver
 Update caregiver
 
-_Expenses
+_Expenses_
 Add expense
 - for Child/ren
 - Activity
