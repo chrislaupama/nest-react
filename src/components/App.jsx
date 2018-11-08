@@ -1,10 +1,10 @@
 import React from "react"
 
-import Main from './components/Main'
-import Header from './components/Header'
-import Footer from './components/Footer'
+import Header from './Header'
+import Main from './Main'
+import Footer from './Footer'
 
-export default class Index extends React.Component {
+export default class App extends React.Component {
     render() {
         return (
             <div>
