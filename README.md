@@ -1,5 +1,5 @@
-# nest-react
-Personal Project.
+# NEST App
+NEST is an application developed to help parents and caregivers keep the daily, weekly, monthly and annual scheduling of a child's activities easy.
 
 ### NEST
 - Nurture
@@ -10,35 +10,35 @@ Personal Project.
 # MVP
 
 ## Child
-- Add child
-  - Profile
-    - Parents are...
-    - Related contacts (friends/parents of friends)
-  - Schedule
-  - Activities & Expenses
-- Remove child
-- Update child
+- [ ] Add child
+  - [ ] Profile
+    - [ ] Parents are...
+    - [ ] Related contacts (friends/parents of friends)
+  - [ ] Schedule
+  - [ ] Activities & Expenses
+- [ ] Remove child
+- [ ] Update child
 
 ## Parent
-- Add parent
-  - Profile:
-    - Children are...
-    - Contact details
-    - Related contacts (partners, friends, family)
-  - Schedule
-- Remove adult 
-- Update adult
+- [ ] Add parent
+  - [ ] Profile:
+    - [ ] Children are...
+    - [ ] Contact details
+    - [ ] Related contacts (partners, friends, family)
+  - [ ] Schedule
+- [ ] Remove adult 
+- [ ] Update adult
 
 ## Schedule
-- Add schedule
-  - to child
-  - to parent
-- Remove schedule
-  - from child
-  - from parent
-- Update schedule
-  - of child
-  - of parent
+- [ ] Add schedule
+  - [ ] to child
+  - [ ] to parent
+- [ ] Remove schedule
+  - [ ] from child
+  - [ ] from parent
+- [ ] Update schedule
+  - [ ] of child
+  - [ ] of parent
 
 # STRETCHES
 
