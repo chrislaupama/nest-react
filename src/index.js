@@ -1,15 +1,18 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Index from './components/App'
 
-import "./styles.css";
+// import Header from './components/Header'
+// import Main from './components/Main'
+// import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Welcome to Nest.</h1>
+    <div className="container">
+      <Index />
     </div>
   );
 }
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+const rootElement = document.getElementById('root')
+ReactDOM.render(<App />, rootElement)

@@ -5,9 +5,11 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "materialize-css": "^1.0.0-rc.2",
     "react": "16.5.2",
     "react-dom": "16.5.2",
-    "react-scripts": "2.0.3"
+    "react-scripts": "2.0.3",
+    "style-loader": "^0.23.1"
   },
   "devDependencies": {},
   "scripts": {
@@ -16,5 +18,10 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
