@@ -4,7 +4,7 @@ export default class Main extends React.Component {
   render() {
     return (
       <div>
-        <h1 className='text-center'>Testing, 123</h1>
+        <h1 className='text-center'>Content goes here.</h1>
       </div>
     )
   }
