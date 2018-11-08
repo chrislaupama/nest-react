@@ -42,20 +42,20 @@ NEST is an application developed to help parents and caregivers keep the daily, 
 
 # STRETCHES
 
-* - Caregiver
+- Caregiver
   - Add caregiver
   - Profile:
-  - Children
-  - Contact details
-  - Schedule
+    - Children
+    - Contact details
+    - Schedule
   - Remove caregiver
   - Update caregiver
 
 - Expenses
   - Add expense
-  - for Child/ren
-  - Activity
-  - Frequency (if needed)
-  - for Adult/s 
+    - for Child/ren
+    - Activity
+    - Frequency (if needed)
+    - Allocate expense to Adult/s 
   - Remove expense
   - Update expense*
