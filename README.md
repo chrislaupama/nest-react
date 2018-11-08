@@ -1,7 +1,7 @@
 # nest-react
 Personal Project.
 
-NEST
+### NEST
 - Nurture
 - Expenses
 - Schedule
@@ -10,52 +10,54 @@ NEST
 # MVP
 
 ## Child
-Add child
-- Profile:
-- Parents are...
-- Related contacts (friends/parents of friends)
-- Schedule
-- Activities & Expenses
-Remove child
-Update child
+- Add child
+  - Profile
+    - Parents are...
+    - Related contacts (friends/parents of friends)
+  - Schedule
+  - Activities & Expenses
+- Remove child
+- Update child
 
 ## Parent
-Add parent
-- Profile:
-- Children are...
-- Contact details
-- Related contacts (partners, friends, family)
-- Schedule
-Remove adult 
-Update adult
+- Add parent
+  - Profile:
+    - Children are...
+    - Contact details
+    - Related contacts (partners, friends, family)
+  - Schedule
+- Remove adult 
+- Update adult
 
 ## Schedule
-Add schedule
-- to child
-- to parent
-Remove schedule
-- from child
-- from parent
-Update schedule
-- of child
-- of parent
+- Add schedule
+  - to child
+  - to parent
+- Remove schedule
+  - from child
+  - from parent
+- Update schedule
+  - of child
+  - of parent
 
 # STRETCHES
 
-_Caregiver_
-- Add caregiver
-- Profile:
-- Children
-- Contact details
-- Schedule
-- Remove caregiver
-- Update caregiver
+*
+- Caregiver
+  - Add caregiver
+  - Profile:
+  - Children
+  - Contact details
+  - Schedule
+  - Remove caregiver
+  - Update caregiver
 
-_Expenses_
-- Add expense
-- for Child/ren
-- Activity
-- Frequency (if needed)
-- for Adult/s 
-- Remove expense
-- Update expense
+- Expenses
+  - Add expense
+  - for Child/ren
+  - Activity
+  - Frequency (if needed)
+  - for Adult/s 
+  - Remove expense
+  - Update expense
+  *
