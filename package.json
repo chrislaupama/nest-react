@@ -23,5 +23,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "repository": "https://github.com/chrislaupama/nest-react.git",
+  "author": "Chris Laupama",
+  "license": "MIT"
 }
