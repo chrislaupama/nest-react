@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 export default class Main extends React.Component {
   render() {
@@ -15,10 +15,10 @@ export default class Main extends React.Component {
                 </p>
               </div>
               <div className="card-action">
-                <a href="/profile.html">
+                <a href="/#/">
                   <i className="material-icons amber-text">calendar_today</i>
                 </a>
-                <a href="/add_sched.html">
+                <a href="/#/">
                   <i className="material-icons amber-text">add</i>
                 </a>
               </div>
@@ -36,10 +36,10 @@ export default class Main extends React.Component {
                 </p>
               </div>
               <div className="card-action">
-                <a href="/profile.html">
+                <a href="/#/">
                   <i className="material-icons amber-text">calendar_today</i>
                 </a>
-                <a href="/add_sched.html">
+                <a href="/#/">
                   <i className="material-icons amber-text">add</i>
                 </a>
               </div>
