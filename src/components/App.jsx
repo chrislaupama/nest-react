@@ -12,13 +12,13 @@ export default class App extends React.Component {
     return (
       <Router>
         <div>
-          <Route path='/' exact component={Header} />
-          <Route path='/' exact component={Login} />
-          <Route path='/profiles' exact component={Main} />
-          <Route path='/' exact component={Footer} />
-          <Route path='/' exact component={FloatingButton} />
+          <Route path="/" component={Header} />
+          <Route path="/" exact component={Login} />
+          <Route path="/app" exact component={Main} />
+          <Route path="/" component={Footer} />
+          <Route path="/app" component={FloatingButton} />
         </div>
       </Router>
-    );
+    )
   }
 }
