@@ -1,9 +1,9 @@
-import React from "react";
-import M from "materialize-css";
+import React from 'react'
+import M from 'materialize-css'
 
 export default class FloatingButton extends React.Component {
   componentDidMount() {
-    var elems = document.querySelectorAll(".fixed-action-btn");
+    var elems = document.querySelectorAll(".fixed-action-btn")
     M.FloatingActionButton.init(elems, {
       direction: "left",
       hoverEnabled: false
