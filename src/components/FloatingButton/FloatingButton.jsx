@@ -3,7 +3,7 @@ import M from 'materialize-css'
 
 export default class FloatingButton extends React.Component {
   componentDidMount() {
-    var elems = document.querySelectorAll('.fixed-action-btn')
+    const elems = document.querySelectorAll('.fixed-action-btn')
     M.FloatingActionButton.init(elems, {
       direction: 'left',
       hoverEnabled: false
