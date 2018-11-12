@@ -18,7 +18,7 @@ export default class Login extends React.Component {
                     <label for="email">Email address</label>
                     <input
                       type="email"
-                      className="validate"
+                      className="validate amber-text"
                       name="email"
                       id="email"
                     />
@@ -27,7 +27,7 @@ export default class Login extends React.Component {
                     <label for="password">Password </label>
                     <input
                       type="password"
-                      className="validate"
+                      className="validate amber-text"
                       name="password"
                       id="password"
                     />
@@ -36,7 +36,6 @@ export default class Login extends React.Component {
               </div>
               <div className="card-action center-align">
                 <Link to="/app">
-                  {' '}
                   <button
                     className="btn waves-effect waves-light amber blue-grey-text text-darken-4"
                     type="submit"
