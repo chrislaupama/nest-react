@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Main extends React.Component {
   render() {
@@ -16,12 +17,16 @@ export default class Main extends React.Component {
                 </p>
               </div>
               <div className="card-action">
-                <a href="/#/">
-                  <i className="material-icons amber-text">calendar_today</i>
-                </a>
-                <a href="/#/">
-                  <i className="material-icons amber-text">add</i>
-                </a>
+                <Link to="/profile">
+                  <a href="/#/">
+                    <i className="material-icons amber-text">calendar_today</i>
+                  </a>
+                </Link>
+                <Link to="/add">
+                  <a href="/#/">
+                    <i className="material-icons amber-text">add</i>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -37,12 +42,16 @@ export default class Main extends React.Component {
                 </p>
               </div>
               <div className="card-action">
-                <a href="/#/">
-                  <i className="material-icons amber-text">calendar_today</i>
-                </a>
-                <a href="/#/">
-                  <i className="material-icons amber-text">add</i>
-                </a>
+                <Link to="/profile">
+                  <a href="/#/">
+                    <i className="material-icons amber-text">calendar_today</i>
+                  </a>
+                </Link>
+                <Link to="/add">
+                  <a href="/#/">
+                    <i className="material-icons amber-text">add</i>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
