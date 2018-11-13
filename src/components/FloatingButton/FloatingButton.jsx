@@ -3,7 +3,7 @@ import M from 'materialize-css'
 
 export default class FloatingButton extends React.Component {
   componentDidMount() {
-    const elems = document.querySelectorAll('.fixed-action-btn')
+    var elems = document.querySelectorAll('.fixed-action-btn')
     M.FloatingActionButton.init(elems, {
       direction: 'left',
       hoverEnabled: false
@@ -11,12 +11,12 @@ export default class FloatingButton extends React.Component {
   }
   render() {
     return (
-      <div className="fixed-action-btn">
-        <a href="/#" className="btn-floating btn-large amber">
+      <div className="fixed-action-btn click-to-toggle direction-left">
+        <span className="btn-floating btn-large amber">
           <i className="large material-icons blue-grey-text text-darken-4">
             add
           </i>
-        </a>
+        </span>
         <ul>
           <li>
             <a href="/#" className="btn-floating yellow darken-1">
