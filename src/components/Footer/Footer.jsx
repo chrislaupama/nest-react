@@ -8,9 +8,8 @@ export default class Footer extends React.Component {
           <div className="col s12">
             <div className="card-panel blue-grey darken-3">
               <span className="grey-text text-lighten-1">
-                NEST is an application developed to help modern families and
-                keep the daily, weekly, monthly and annual scheduling of a
-                child's activities easy.
+                NEST is an application developed to help modern families keep the daily, weekly, monthly and annual scheduling of a
+                child's activities simple.
               </span>
             </div>
           </div>
