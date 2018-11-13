@@ -6,48 +6,64 @@ export default class Login extends React.Component {
   render() {
     return (
       <div className="section">
-        <div className="valign-wrapper row login-box">
-          <div className="blue-grey darken-3 col card hoverable s10 pull-s1 m6 pull-m3 l4 pull-l4">
-            <form>
-              <div className="card-content">
-                <span className="card-title center-align amber-text">
-                  Login
-                </span>
+        <center>
+          <div className="section" />
+          <div className="container">
+            <div className="z-depth-1 blue-grey darken-4 row login-box">
+
+              <form className="col s12" method="post">
+                <div className="row">
+                  <div className="col s12" />
+                </div>
+
                 <div className="row">
                   <div className="input-field col s12">
-                    <label for="email">Email address</label>
                     <input
-                      type="email"
                       className="validate amber-text"
+                      type="email"
                       name="email"
                       id="email"
                     />
+                    <label for="email">Email</label>
                   </div>
+                </div>
+
+                <div className="row">
                   <div className="input-field col s12">
-                    <label for="password">Password </label>
                     <input
-                      type="password"
                       className="validate amber-text"
+                      type="password"
                       name="password"
                       id="password"
                     />
+                    <label for="password">Password</label>
                   </div>
+                  <label>
+                    <a className="blue-grey-text text-darken-1" href="#!">
+                      <b>Forgot Password?</b>
+                    </a>
+                  </label>
                 </div>
-              </div>
-              <div className="card-action center-align">
-                <Link to="/app">
-                  <button
-                    className="btn waves-effect waves-light amber blue-grey-text text-darken-4"
-                    type="submit"
-                    name="action"
-                  >
-                    Submit
-                  </button>
-                </Link>
-              </div>
-            </form>
+
+                <br />
+                  <div className="row">
+                    <Link to="/app">
+                      <button
+                        type="submit"
+                        name="btn_login"
+                        className="col s12 btn btn-large waves-effect amber blue-grey-text text-darken-4"
+                      >
+                        Login
+                      </button>
+                    </Link>
+                  </div>
+                <div className="section" />
+              </form>
+
+            </div>
           </div>
-        </div>
+          <a className="blue-grey-text text-darken-1" href="#!">Create account</a>
+        </center>
       </div>
     )
   }
