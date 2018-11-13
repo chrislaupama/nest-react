@@ -17,7 +17,7 @@ export default class Main extends React.Component {
                 </p>
               </div>
               <div className="card-action">
-                <Link to="/profile">
+                <Link to="/app/profile">
                   <a href="/#/">
                     <i className="material-icons amber-text">calendar_today</i>
                   </a>
@@ -42,7 +42,7 @@ export default class Main extends React.Component {
                 </p>
               </div>
               <div className="card-action">
-                <Link to="/profile">
+                <Link to="/app/profile">
                   <a href="/#/">
                     <i className="material-icons amber-text">calendar_today</i>
                   </a>
