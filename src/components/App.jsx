@@ -7,6 +7,7 @@ import Footer from './Footer/Footer'
 import FloatingButton from './FloatingButton/FloatingButton'
 import Login from './Login/Login'
 import Add from './Add/Add'
+import Profile from './Profile/Profile'
 
 export default class App extends React.Component {
   render() {
@@ -17,6 +18,7 @@ export default class App extends React.Component {
           <Route path="/" exact component={Login} />
           <Route path="/app" exact component={Main} />
           <Route path="/add" exact component={Add} />
+          <Route path="/app/profile" component={Profile} />
           <Route path="/" component={Footer} />
           <Route path="/app" component={FloatingButton} />
         </div>
