@@ -25,7 +25,7 @@ export default class Footer extends React.Component {
           </div>
           <div className="row">
             <div className="input-field col s12">
-              <input id="password" type="password" className="validate" />
+              <input id="password" type="password" className="validate amber-text" />
               <label for="password">Password</label>
             </div>
           </div>
