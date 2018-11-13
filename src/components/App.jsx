@@ -19,7 +19,7 @@ export default class App extends React.Component {
           <Route path="/app" exact component={Main} />
           <Route path="/add" exact component={Add} />
           <Route path="/app/profile" component={Profile} />
-          <Route path="/" component={Footer} />
+          <Route path="/app" component={Footer} />
           <Route path="/app" component={FloatingButton} />
         </div>
       </Router>
