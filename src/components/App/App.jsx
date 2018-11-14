@@ -25,11 +25,14 @@ export default class Main extends React.Component {
     ]
   }
 
-  addChild(child) {
-    const prevChildren = this.state.children
-    this.state.children.push({id: child.length +1, firstName: child.firstName, lastname: child.lastName })
+  addChild = (child) => {
+    // Give the new child an id which is +1 higher than the last child's id
+    child.id = this.state.children.length + 1
+    // Get copy of the full current state by using ..., then add the new child object by adding a comma then the child argument to add the new child object
+    let children = [...this.state.children, child]
+    // Now we add the new children array with the current children and the new child to the state
     this.setState({
-      children: prevChildren
+      children: children
     })
   }
 
