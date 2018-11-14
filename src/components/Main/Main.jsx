@@ -1,15 +1,23 @@
 import React from 'react'
+import ProfileCard from '../ProfileCard/ProfileCard'
 
 export default class Main extends React.Component {
   state = {
-    child: [
+    children: [
       {
         id: 1,
-        name: Bella
+        firstName: "Bella",
+        lastName: "Laupama"
       },
       {
         id: 2,
-        name: Cara
+        firstName: "Cara",
+        lastName: "Malane"
+      },
+      {
+        id: 3,
+        firstName: "Mila",
+        lastName: "Laupama"
       }
     ]
   }
@@ -17,7 +25,13 @@ export default class Main extends React.Component {
     return (
       <div className="section">
         <div className="row">
-          <ProfileCard />
+        {
+          this.state.children.map((child) => {
+            return (
+              <ProfileCard firstName={child.firstName} lastName={child.lastNamelastName} id={child.id} key={child.id} />
+            )
+          })
+        }
         </div>
       </div>
     )
