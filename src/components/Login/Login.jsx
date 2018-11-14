@@ -11,7 +11,7 @@ export default class Login extends React.Component {
           <div className="container">
             <div className="z-depth-1 blue-grey darken-4 row login-box">
 
-              <form className="col s12" method="post">
+              <form className="col s12">
                 <div className="row">
                   <div className="col s12" />
                 </div>
