@@ -13,6 +13,13 @@ export default class Footer extends React.Component {
     })
   }
 
+  submitHandler = e => {
+    e.preventDefault()
+
+    // Final validation before submitting to server
+    console.log('SUBMITTED:', this.state)
+  }
+
   render() {
     return (
       <div className="section">
@@ -21,8 +28,7 @@ export default class Footer extends React.Component {
           <h3 className="amber-text">Add Child</h3>
           <div className="container">
             <div className="z-depth-1 blue-grey darken-4 row login-box">
-
-              <form className="col s12">
+              <form className="col s12" onSubmit={this.submitHandler}>
                 <div className="row">
                   <div className="col s12" />
                 </div>
@@ -61,18 +67,17 @@ export default class Footer extends React.Component {
                 </div>
 
                 <br />
-                  <div className="row">
-                      <button
-                        type="submit"
-                        name="btn_login"
-                        className="col s12 btn btn-large waves-effect amber blue-grey-text text-darken-4"
-                      >
-                        Submit
-                      </button>
-                  </div>
+                <div className="row">
+                  <button
+                    type="submit"
+                    name="btn_login"
+                    className="col s12 btn btn-large waves-effect amber blue-grey-text text-darken-4"
+                  >
+                    Submit
+                  </button>
+                </div>
                 <div className="section" />
               </form>
-
             </div>
           </div>
         </center>
