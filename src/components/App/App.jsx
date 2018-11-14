@@ -44,8 +44,6 @@ export default class Main extends React.Component {
             return (
               <ProfileCard
                 firstName={child.firstName}
-                lastName={child.lastName}
-                id={child.id}
                 key={child.id}
               />
             )
