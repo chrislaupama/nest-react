@@ -18,6 +18,11 @@ export default class Footer extends React.Component {
     this.props.addChild(this.state)
     // Final validation before submitting to server
     console.log('SUBMITTED:', this.state)
+    // Clear the state to clear the form
+    this.setState({
+      firstName: '',
+      lastName: ''
+  })
   }
 
   render() {
@@ -50,12 +55,14 @@ export default class Footer extends React.Component {
               <label for="last_name">Last Name</label>
             </div>
           </div>
+          <div className="center">
           <button
             type="submit"
-            className="col s12 btn waves-effect amber blue-grey-text text-darken-4"
+            className="btn-floating waves-effect amber"
           >
-            Add Child
+            <i className="material-icons blue-grey-text text-darken-4">add</i>
           </button>
+          </div>
         </form>
       </div>
     )
