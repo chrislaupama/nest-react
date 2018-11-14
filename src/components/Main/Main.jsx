@@ -28,7 +28,7 @@ export default class Main extends React.Component {
         {
           this.state.children.map((child) => {
             return (
-              <ProfileCard firstName={child.firstName} lastName={child.lastNamelastName} id={child.id} key={child.id} />
+              <ProfileCard firstName={child.firstName} lastName={child.lastName} id={child.id} key={child.id} />
             )
           })
         }
