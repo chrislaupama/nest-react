@@ -23,7 +23,7 @@ export default class ProfileCard extends React.Component {
                 <i className="material-icons amber-text">calendar_today</i>
               </a>
             </Link>
-            <Link to="/add">
+            <Link to="/add/child">
               <a href="/#/">
                 <i className="material-icons amber-text">add</i>
               </a>
