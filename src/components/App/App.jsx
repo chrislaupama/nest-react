@@ -1,11 +1,14 @@
 import React from 'react'
 import ProfileCard from '../ProfileCard/ProfileCard'
 import AddChild from '../AddChild/AddChild'
-import FloatingButton from '../FloatingButton/FloatingButton'
-// import { DB_CONFIG } '../../Config/Config'
+import Modal from 'react-modal'
+import './app.css'
+
+Modal.setAppElement('#root')
 
 export default class Main extends React.Component {
   state = {
+    showModal: false,
     children: [
       {
         id: 1,
@@ -25,7 +28,7 @@ export default class Main extends React.Component {
     ]
   }
 
-  addChild = (child) => {
+  addChild = child => {
     // Give the new child an id which is +1 higher than the last child's id
     child.id = this.state.children.length + 1
     // Get copy of the full current state by using ..., then add the new child object by adding a comma then the child argument to add the new child object
@@ -36,21 +39,48 @@ export default class Main extends React.Component {
     })
   }
 
+  handleOpenModal = () => {
+    this.setState({ showModal: true })
+  }
+
+  handleCloseModal = () => {
+    this.setState({ showModal: false })
+  }
+
   render() {
     return (
       <div className="section">
         <div className="row">
-          {this.state.children.map(child => {
-            return (
-              <ProfileCard
-                firstName={child.firstName}
-                key={child.id}
-              />
-            )
-          })}
-          <AddChild addChild={this.addChild}/>
+          <div className="center">
+            <button
+              className="btn-floating btn-large waves-effect amber"
+              onClick={this.handleOpenModal}
+            >
+              <i className="material-icons blue-grey-text text-darken-4">add</i>
+            </button>
+          </div>
         </div>
-        <FloatingButton />
+        <div className="row">
+          {this.state.children.map(child => {
+            return <ProfileCard firstName={child.firstName} key={child.id} />
+          })}
+          <Modal
+            isOpen={this.state.showModal}
+            onRequestClose={this.handleCloseModal}
+            className="Modal"
+            overlayClassName="Overlay"
+          >
+            <AddChild addChild={this.addChild} />
+            <button
+              className="left btn-floating waves-effect orange darken-4"
+              onClick={this.handleCloseModal}
+            >
+              <i className="material-icons blue-grey-text text-darken-4">
+                close
+              </i>
+            </button>
+          </Modal>
+        </div>
       </div>
     )
   }
