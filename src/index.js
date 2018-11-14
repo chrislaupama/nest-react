@@ -7,7 +7,7 @@ function App() {
     <div className="container">
       <Index />
     </div>
-  );
+  )
 }
 
 const rootElement = document.getElementById('root')
