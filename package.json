@@ -5,10 +5,9 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "materialize-css": "^1.0.0-rc.2",
     "react": "16.5.2",
     "react-dom": "16.5.2",
-    "react-modal": "^3.6.1",
+    "react-materialize": "^2.4.8",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.3",
     "style-loader": "^0.23.1"
