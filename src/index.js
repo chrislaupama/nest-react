@@ -1,13 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Index from './components/Index'
+import Routes from './components/Routes'
 
-function App() {
-  return (
-    <div className="container">
-      <Index />
-    </div>
-  )
+export default class App extends React.Component {
+  render() {
+    return <Routes />
+  }
 }
 
 const rootElement = document.getElementById('root')
