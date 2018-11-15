@@ -15,7 +15,7 @@ export default class Routes extends React.Component {
           <Route path="/" component={Header} />
           <Route path="/" exact component={Login} />
           <Route path="/main" exact component={Main} />
-          <Route path="/main/profile" component={Profile} />
+          <Route path="/main/profile/:id" component={Profile} />
           <Route path="/main" component={Footer} />
         </div>
       </Router>
