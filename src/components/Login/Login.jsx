@@ -9,7 +9,7 @@ export default class Login extends React.Component {
         <center>
           <div className="section" />
           <div className="container">
-            <div className="z-depth-1 blue-grey darken-4 row login-box">
+            <div className="z-depth-0 blue-grey darken-4 row login-box">
 
               <form className="col s12">
                 <div className="row">
