@@ -1,14 +1,10 @@
 import React from 'react'
 import ProfileCard from '../ProfileCard/ProfileCard'
 import AddChild from '../AddChild/AddChild'
-import Modal from 'react-modal'
-import './app.css'
+import Modal from 'react-materialize'
 
-Modal.setAppElement('#root')
-
-export default class Main extends React.Component {
+export default class App extends React.Component {
   state = {
-    showModal: false,
     children: [
       {
         id: 1,
@@ -39,47 +35,31 @@ export default class Main extends React.Component {
     })
   }
 
-  handleOpenModal = () => {
-    this.setState({ showModal: true })
-  }
-
-  handleCloseModal = () => {
-    this.setState({ showModal: false })
-  }
-
   render() {
     return (
       <div className="section">
         <div className="row">
-          <div className="center">
-            <button
-              className="btn-floating btn-large waves-effect amber"
-              onClick={this.handleOpenModal}
-            >
-              <i className="material-icons blue-grey-text text-darken-4">add</i>
-            </button>
-          </div>
+          <div className="center" />
         </div>
         <div className="row">
           {this.state.children.map(child => {
             return <ProfileCard firstName={child.firstName} key={child.id} />
           })}
-          <Modal
-            isOpen={this.state.showModal}
-            onRequestClose={this.handleCloseModal}
-            className="Modal"
-            overlayClassName="Overlay"
-          >
-            <AddChild addChild={this.addChild} />
-            <button
-              className="left btn-floating waves-effect orange darken-4"
-              onClick={this.handleCloseModal}
-            >
-              <i className="material-icons blue-grey-text text-darken-4">
-                close
-              </i>
-            </button>
-          </Modal>
+          <div className="col s12 m6">
+            <div className="card blue-grey darken-3 z-depth-0">
+              <div className="card-content">
+                <span className="card-title amber-text">Add Child</span>
+              </div>
+              <div className="card-action">
+                <Modal
+                  trigger={<i className="material-icons amber-text">add</i>}
+                  className="blue-grey darken-4"
+                >
+                  <AddChild addChild={this.addChild} />
+                </Modal>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     )
