@@ -6,11 +6,7 @@ const ProfileCard = props => {
     <div className="col s12 m6">
       <div className="card blue-grey darken-2 z-depth-4">
         <div className="card-content white-text">
-          <span className="card-title amber-text">{props.firstName}</span>
-          <p>
-            This section will contain the current schedule for this child,
-            including the name of the adult who has that child on that day.
-          </p>
+          <span className="card-title amber-text">{props.firstName}'s Schedule</span>
         </div>
         <div className="card-action">
           <Link to="/app/profile">
