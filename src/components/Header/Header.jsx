@@ -8,7 +8,7 @@ export default class Header extends React.Component {
       <header>
         <nav>
           <div className="nav-wrapper blue-grey darken-4">
-            <Link to="/app">
+            <Link to="/main">
               <a href="/#" className="brand-logo center">
                 <img src="/images/logo.png" alt="Nest" className="logo" />
               </a>

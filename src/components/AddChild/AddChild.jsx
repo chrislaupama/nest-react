@@ -15,7 +15,7 @@ export default class AddChild extends React.Component {
 
   submitHandler = e => {
     e.preventDefault()
-    this.props.addChild(this.state)
+    this.props.newChild(this.state)
     // Final validation before submitting to server
     console.log('SUBMITTED:', this.state)
     // Clear the state to clear the form

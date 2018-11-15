@@ -1,7 +1,7 @@
 import React from 'react'
 import ProfileCard from '../ProfileCard/ProfileCard'
 import AddChild from '../AddChild/AddChild'
-import Modal from 'react-materialize'
+import { Modal } from 'react-materialize'
 
 export default class App extends React.Component {
   state = {
@@ -24,7 +24,7 @@ export default class App extends React.Component {
     ]
   }
 
-  addChild = child => {
+  newChild = child => {
     // Give the new child an id which is +1 higher than the last child's id
     child.id = this.state.children.length + 1
     // Get copy of the full current state by using ..., then add the new child object by adding a comma then the child argument to add the new child object
@@ -55,7 +55,7 @@ export default class App extends React.Component {
                   trigger={<i className="material-icons amber-text">add</i>}
                   className="blue-grey darken-4"
                 >
-                  <AddChild addChild={this.addChild} />
+                  <AddChild newChild={this.newChild} />
                 </Modal>
               </div>
             </div>
