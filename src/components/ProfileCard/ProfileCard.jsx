@@ -9,12 +9,12 @@ const ProfileCard = props => {
           <span className="card-title amber-text">{props.firstName}'s Schedule</span>
         </div>
         <div className="card-action">
-          <Link to="/app/profile">
+          <Link to="/main/profile">
             <a href="/#/">
               <i className="material-icons amber-text">calendar_today</i>
             </a>
           </Link>
-          <Link to="/add/child">
+          <Link to="/#">
             <a href="/#/">
               <i className="material-icons amber-text">add</i>
             </a>
