@@ -98,7 +98,7 @@ export default class App extends React.Component {
           </div>
           <div className="row">
             {this.state.children.map(child => {
-              return <ProfileCard firstName={child.firstName} schedule={child.schedules} key={child.id} />
+              return <ProfileCard firstName={child.firstName} schedules={child.schedules} key={child.id} />
             })}
             <div className="col s12 m6">
               <div className="card blue-grey darken-3 z-depth-0">
