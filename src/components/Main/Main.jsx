@@ -9,17 +9,71 @@ export default class App extends React.Component {
       {
         id: 1,
         firstName: 'Bella',
-        lastName: 'Laupama'
+        lastName: 'Laupama',
+        schedules: [
+          {
+            id: 1,
+            date: '25 December 2018',
+            parent: 'Chris',
+            activity: 'Christmas'
+          },{
+            id: 2,
+            date: '31 December 2018',
+            parent: 'Laura',
+            activity: 'New Years Eve'
+          },{
+            id: 1,
+            date: '15 Janurary 2019',
+            parent: 'Mischa',
+            activity: 'Singapore Trip'
+          }
+        ]
       },
       {
         id: 2,
         firstName: 'Cara',
-        lastName: 'Malane'
+        lastName: 'Malane',
+        schedules: [
+          {
+            id: 1,
+            date: '25 December 2018',
+            parent: 'Chris',
+            activity: 'Christmas'
+          },{
+            id: 2,
+            date: '31 December 2018',
+            parent: 'Laura',
+            activity: 'New Years Eve'
+          },{
+            id: 1,
+            date: '15 Janurary 2019',
+            parent: 'Mischa',
+            activity: 'Singapore Trip'
+          }
+        ]
       },
       {
         id: 3,
         firstName: 'Mila',
-        lastName: 'Laupama'
+        lastName: 'Laupama',
+        schedules: [
+          {
+            id: 1,
+            date: '25 December 2018',
+            parent: 'Chris',
+            activity: 'Christmas'
+          },{
+            id: 2,
+            date: '31 December 2018',
+            parent: 'Laura',
+            activity: 'New Years Eve'
+          },{
+            id: 1,
+            date: '15 Janurary 2019',
+            parent: 'Mischa',
+            activity: 'Singapore Trip'
+          }
+        ]
       }
     ]
   }
@@ -44,7 +98,7 @@ export default class App extends React.Component {
           </div>
           <div className="row">
             {this.state.children.map(child => {
-              return <ProfileCard firstName={child.firstName} key={child.id} />
+              return <ProfileCard firstName={child.firstName} schedule={child.schedules} key={child.id} />
             })}
             <div className="col s12 m6">
               <div className="card blue-grey darken-3 z-depth-0">
