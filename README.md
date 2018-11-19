@@ -10,7 +10,7 @@ NEST is an application developed to help parents and caregivers keep the daily, 
 # MVP
 
 ## Child
-- [ ] Add child
+- [x] Add child
   - [ ] Profile
     - [ ] Parents are...
     - [ ] Related contacts (friends/parents of friends)
