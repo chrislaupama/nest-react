@@ -1,7 +1,7 @@
-import { React, Fragment } from 'react'
+import React from 'react'
 
 const ScheduleList = props => (
-  <Fragment>
+  <React.Fragment>
     <ul className="collection">
       <li className="collection-item avatar blue-grey darken-2 white-text">
         <i className="material-icons circle amber lighten-1 blue-grey-text text-darken-3">
@@ -19,7 +19,7 @@ const ScheduleList = props => (
         </a>
       </li>
     </ul>
-  </Fragment>
+  </React.Fragment>
 )
 
 export default ScheduleList
