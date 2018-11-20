@@ -113,6 +113,7 @@ export default class App extends React.Component {
               return (
                 <ProfileCard
                   delChild={this.delChild}
+                  newSched={this.newSched}
                   firstName={child.firstName}
                   schedules={child.schedules}
                   key={child.id}
@@ -128,13 +129,10 @@ export default class App extends React.Component {
                   <Modal
                     className="blue-grey darken-4"
                     actions={
-                      <Button
-                        className="blue-grey darken-4"
-                        waves="light"
-                        modal="close"
-                        flat
-                      >
-                        <span className="amber-text">Close</span>
+                      <Button modal="close" flat>
+                        <i className="material-icons blue-grey-text text-darken-4">
+                          close
+                        </i>
                       </Button>
                     }
                     trigger={
