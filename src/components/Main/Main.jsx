@@ -76,9 +76,9 @@ export default class App extends React.Component {
     })
   }
 
-  delChild = id => {
+  delChild = firstName => {
     let children = [...this.state.children]
-    let newState = children.filter(child => child.id === id)
+    let newState = children.filter(child => child.firstName !== firstName)
     this.setState({
       children: newState
     })
