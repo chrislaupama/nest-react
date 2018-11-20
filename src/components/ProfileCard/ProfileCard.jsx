@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { Modal, Button } from 'react-materialize'
 import Profile from '../Profile/Profile'
 
