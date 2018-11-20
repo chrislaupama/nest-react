@@ -15,7 +15,7 @@ const ScheduleList = props => (
           <strong>Activity:</strong> {props.activity}
         </p>
         <a href="#!" className="secondary-content">
-          <i className="material-icons red-text">delete</i>
+          <i className="material-icons blue-grey-text">delete</i>
         </a>
       </li>
     </ul>
