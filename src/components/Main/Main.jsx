@@ -120,7 +120,7 @@ export default class App extends React.Component {
                     }
                     trigger={
                       <a href="/#/">
-                        <i className="material-icons amber-text">add</i>
+                        <i className="material-icons amber-text">person_add</i>
                       </a>
                     }
                   >
