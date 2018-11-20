@@ -14,9 +14,9 @@ NEST is an application developed to help parents and caregivers keep the daily, 
   - [ ] Profile
     - [ ] Parents are...
     - [ ] Related contacts (friends/parents of friends)
-  - [ ] Schedule
+  - [x] Schedule
   - [ ] Activities & Expenses
-- [ ] Remove child
+- [x] Remove child
 - [ ] Update child
 
 ## Parent
@@ -30,8 +30,8 @@ NEST is an application developed to help parents and caregivers keep the daily, 
 - [ ] Update adult
 
 ## Schedule
-- [ ] Add schedule
-  - [ ] to child
+- [x] Add schedule
+  - [x] to child
   - [ ] to parent
 - [ ] Remove schedule
   - [ ] from child
