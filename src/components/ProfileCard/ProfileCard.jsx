@@ -11,17 +11,22 @@ const ProfileCard = props => (
         </span>
       </div>
       <div className="card-action">
-      <i class="material-icons right blue-grey-text" onClick={() => { props.delChild(props.firstName)}}>delete</i>
+        <i
+          class="material-icons right blue-grey-text"
+          onClick={() => {
+            props.delChild(props.firstName)
+          }}
+        >
+          delete
+        </i>
         <Modal
           className="blue-grey darken-4"
           actions={
             <Button
-              className="blue-grey darken-4"
-              waves="light"
               modal="close"
               flat
             >
-              <span className="amber-text">Close</span>
+                <i className="material-icons blue-grey-text text-darken-4">close</i>
             </Button>
           }
           trigger={<i className="material-icons amber-text">calendar_today</i>}
@@ -29,6 +34,7 @@ const ProfileCard = props => (
           <Profile
             firstName={props.firstName}
             schedules={props.schedules}
+            newSched={props.newSched}
             key={props.id}
           />
         </Modal>
