@@ -76,6 +76,14 @@ export default class App extends React.Component {
     })
   }
 
+  delChild = id => {
+    let children = [...this.state.children]
+    let newState = children.filter(child => child.id === id)
+    this.setState({
+      children: newState
+    })
+  }
+
   render() {
     return (
       <div className="container">
@@ -85,7 +93,7 @@ export default class App extends React.Component {
           </div>
           <div className="row">
             {this.state.children.map(child => {
-              return <ProfileCard firstName={child.firstName} schedules={child.schedules} key={child.id} />
+              return <ProfileCard delChild={this.delChild} firstName={child.firstName} schedules={child.schedules} key={child.id} />
             })}
             <div className="col s12 m6">
               <div className="card blue-grey darken-3 z-depth-0">
