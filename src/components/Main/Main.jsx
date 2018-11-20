@@ -90,6 +90,7 @@ export default class App extends React.Component {
     })
   }
 
+  // TODO need to get this fixed
   addSched = (id, schedule) => {
     const newSched = this.state.children.map(child => {
       if (child.id !== id) return child
