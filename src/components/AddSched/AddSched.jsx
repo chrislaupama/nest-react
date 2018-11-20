@@ -35,7 +35,7 @@ export default class AddSched extends React.Component {
             <div className="input-field col s12 input-margin">
               <input
                 className="amber-text"
-                type="text"
+                type="date"
                 name="date"
                 value={this.state.date}
                 onChange={this.handleChange}
