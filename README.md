@@ -7,6 +7,11 @@ NEST is an application developed to help parents and caregivers keep the daily, 
 - Schedule
 - Trust/Time
 
+# Installation
+- git clone this repo
+- yarn
+- yarn start
+
 # MVP
 
 ## Child
