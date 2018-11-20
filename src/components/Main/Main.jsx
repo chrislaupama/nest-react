@@ -61,7 +61,7 @@ export default class App extends React.Component {
             activity: 'New Years Eve'
           },
           {
-            id: 1,
+            id: 3,
             date: '15 Janurary 2019',
             parent: 'Mischa',
             activity: 'Singapore Trip'
@@ -90,7 +90,7 @@ export default class App extends React.Component {
     })
   }
 
-  newSched = (id, schedule) => {
+  addSched = (id, schedule) => {
     const newSched = this.state.children.map(child => {
       if (child.id !== id) return child
       return {
@@ -113,9 +113,10 @@ export default class App extends React.Component {
               return (
                 <ProfileCard
                   delChild={this.delChild}
-                  newSched={this.newSched}
+                  addSched={this.addSched}
                   firstName={child.firstName}
                   schedules={child.schedules}
+                  id={child.id}
                   key={child.id}
                 />
               )
