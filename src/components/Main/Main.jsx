@@ -22,24 +22,6 @@ export default class App extends React.Component {
             date: '31 December 2018',
             parent: 'Laura',
             activity: 'New Years Eve'
-          },
-          {
-            id: 3,
-            date: '15 Janurary 2019',
-            parent: 'Mischa',
-            activity: 'Singapore Trip'
-          },
-          {
-            id: 4,
-            date: '25 Janurary 2019',
-            parent: 'Chris',
-            activity: "Chris's Birthday Party"
-          },
-          {
-            id: 5,
-            date: '7 Feburary 2019',
-            parent: 'Chris',
-            activity: "Bella's Birthday Party"
           }
         ]
       },
@@ -90,13 +72,12 @@ export default class App extends React.Component {
     })
   }
 
-  // TODO need to get this fixed
   addSched = (id, schedule) => {
     const newSched = this.state.children.map(child => {
       if (child.id !== id) return child
       return {
         ...child,
-        schedules: schedule
+        schedules: [...child.schedules, schedule]
       }
     })
     this.setState({ children: newSched })
