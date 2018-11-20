@@ -36,11 +36,6 @@ const ProfileCard = props => (
             key={props.id}
           />
         </Modal>
-        <Link to="/#">
-          <a href="/#/">
-            <i className="material-icons amber-text">add</i>
-          </a>
-        </Link>
       </div>
     </div>
   </div>
