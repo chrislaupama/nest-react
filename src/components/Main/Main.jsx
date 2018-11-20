@@ -22,10 +22,20 @@ export default class App extends React.Component {
             parent: 'Laura',
             activity: 'New Years Eve'
           },{
-            id: 1,
+            id: 3,
             date: '15 Janurary 2019',
             parent: 'Mischa',
             activity: 'Singapore Trip'
+          },{
+            id: 4,
+            date: '25 Janurary 2019',
+            parent: 'Chris',
+            activity: "Chris's Birthday Party"
+          },{
+            id: 5,
+            date: '7 Feburary 2019',
+            parent: 'Chris',
+            activity: "Bella's Birthday Party"
           }
         ]
       },
@@ -33,29 +43,6 @@ export default class App extends React.Component {
         id: 2,
         firstName: 'Cara',
         lastName: 'Malane',
-        schedules: [
-          {
-            id: 1,
-            date: '25 December 2018',
-            parent: 'Chris',
-            activity: 'Christmas'
-          },{
-            id: 2,
-            date: '31 December 2018',
-            parent: 'Laura',
-            activity: 'New Years Eve'
-          },{
-            id: 1,
-            date: '15 Janurary 2019',
-            parent: 'Mischa',
-            activity: 'Singapore Trip'
-          }
-        ]
-      },
-      {
-        id: 3,
-        firstName: 'Mila',
-        lastName: 'Laupama',
         schedules: [
           {
             id: 1,
