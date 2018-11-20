@@ -16,22 +16,26 @@ export default class App extends React.Component {
             date: '25 December 2018',
             parent: 'Chris',
             activity: 'Christmas'
-          },{
+          },
+          {
             id: 2,
             date: '31 December 2018',
             parent: 'Laura',
             activity: 'New Years Eve'
-          },{
+          },
+          {
             id: 3,
             date: '15 Janurary 2019',
             parent: 'Mischa',
             activity: 'Singapore Trip'
-          },{
+          },
+          {
             id: 4,
             date: '25 Janurary 2019',
             parent: 'Chris',
             activity: "Chris's Birthday Party"
-          },{
+          },
+          {
             id: 5,
             date: '7 Feburary 2019',
             parent: 'Chris',
@@ -49,12 +53,14 @@ export default class App extends React.Component {
             date: '25 December 2018',
             parent: 'Chris',
             activity: 'Christmas'
-          },{
+          },
+          {
             id: 2,
             date: '31 December 2018',
             parent: 'Laura',
             activity: 'New Years Eve'
-          },{
+          },
+          {
             id: 1,
             date: '15 Janurary 2019',
             parent: 'Mischa',
@@ -84,6 +90,17 @@ export default class App extends React.Component {
     })
   }
 
+  newSched = (id, schedule) => {
+    const newSched = this.state.children.map(child => {
+      if (child.id !== id) return child
+      return {
+        ...child,
+        schedules: schedule
+      }
+    })
+    this.setState({ children: newSched })
+  }
+
   render() {
     return (
       <div className="container">
@@ -93,7 +110,14 @@ export default class App extends React.Component {
           </div>
           <div className="row">
             {this.state.children.map(child => {
-              return <ProfileCard delChild={this.delChild} firstName={child.firstName} schedules={child.schedules} key={child.id} />
+              return (
+                <ProfileCard
+                  delChild={this.delChild}
+                  firstName={child.firstName}
+                  schedules={child.schedules}
+                  key={child.id}
+                />
+              )
             })}
             <div className="col s12 m6">
               <div className="card blue-grey darken-3 z-depth-0">
@@ -104,14 +128,14 @@ export default class App extends React.Component {
                   <Modal
                     className="blue-grey darken-4"
                     actions={
-                        <Button
-                          className="blue-grey darken-4"
-                          waves="light"
-                          modal="close"
-                          flat
-                        >
-                          <span className="amber-text">Close</span>
-                        </Button>
+                      <Button
+                        className="blue-grey darken-4"
+                        waves="light"
+                        modal="close"
+                        flat
+                      >
+                        <span className="amber-text">Close</span>
+                      </Button>
                     }
                     trigger={
                       <a href="/#/">
