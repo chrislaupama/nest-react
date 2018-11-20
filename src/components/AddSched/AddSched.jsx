@@ -1,4 +1,8 @@
 import React from 'react'
+import 'jquery'
+import 'materialize-css/dist/js/materialize.js'
+import 'materialize-css/dist/css/materialize.css'
+import { Input } from 'react-materialize'
 import './addsched.css'
 
 export default class AddSched extends React.Component {
@@ -31,18 +35,15 @@ export default class AddSched extends React.Component {
     return (
       <div className="col s12 m6">
         <form className="col s12" onSubmit={this.submitHandler}>
-          <div className="row">
-            <div className="input-field col s12 input-margin">
-              <input
-                className="amber-text"
-                type="date"
-                name="date"
-                value={this.state.date}
-                onChange={this.handleChange}
-                id="date"
-              />
-              <label for="date">Select Date</label>
-            </div>
+          <div className="center">
+            <Input
+              className="amber-text"
+              type="date"
+              name="date"
+              placeholder="Date"
+              value={this.state.date}
+              onChange={this.handleChange}
+            />
           </div>
           <div className="row">
             <div className="input-field col s12 input-margin">
