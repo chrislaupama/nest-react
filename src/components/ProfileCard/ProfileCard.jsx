@@ -5,12 +5,13 @@ import Profile from '../Profile/Profile'
 const ProfileCard = props => (
   <div className="col s12 m6">
     <div className="card blue-grey darken-2 z-depth-4">
-      <div className="card-content white-text">
+      <div className="card-content">
         <span className="card-title amber-text">
           {props.firstName}'s Schedule
         </span>
       </div>
       <div className="card-action">
+      <span className="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">delete</i></span>
         <Modal
           className="blue-grey darken-4"
           actions={
@@ -23,11 +24,7 @@ const ProfileCard = props => (
               <span className="amber-text">Close</span>
             </Button>
           }
-          trigger={
-            <a href="/#/">
-              <i className="material-icons amber-text">calendar_today</i>
-            </a>
-          }
+          trigger={<i className="material-icons amber-text">calendar_today</i>}
         >
           <Profile
             firstName={props.firstName}
