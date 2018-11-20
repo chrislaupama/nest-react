@@ -11,7 +11,7 @@ const ProfileCard = props => (
         </span>
       </div>
       <div className="card-action">
-      <span className="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">delete</i></span>
+      <i class="material-icons right blue-grey-text">delete</i>
         <Modal
           className="blue-grey darken-4"
           actions={
