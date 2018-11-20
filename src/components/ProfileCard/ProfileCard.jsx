@@ -1,6 +1,7 @@
 import React from 'react'
 import { Modal, Button } from 'react-materialize'
 import Profile from '../Profile/Profile'
+import AddSched from '../AddSched/AddSched'
 
 const ProfileCard = props => (
   <div className="col s12 m6">
@@ -29,12 +30,28 @@ const ProfileCard = props => (
                 <i className="material-icons blue-grey-text text-darken-4">close</i>
             </Button>
           }
+          trigger={<i className="material-icons right blue-grey-text">add</i>}
+        >
+          <AddSched
+            addSched={props.addSched}
+            id={props.id}
+          />
+        </Modal>
+        <Modal
+          className="blue-grey darken-4"
+          actions={
+            <Button
+              modal="close"
+              flat
+            >
+                <i className="material-icons blue-grey-text text-darken-4">close</i>
+            </Button>
+          }
           trigger={<i className="material-icons amber-text">calendar_today</i>}
         >
           <Profile
             firstName={props.firstName}
             schedules={props.schedules}
-            newSched={props.newSched}
             key={props.id}
           />
         </Modal>
