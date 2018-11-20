@@ -5,33 +5,36 @@ import Profile from '../Profile/Profile'
 const ProfileCard = props => (
   <div className="col s12 m6">
     <div className="card blue-grey darken-2 z-depth-4">
-      <div className="card-content white-text">
+      <div className="card-content">
         <span className="card-title amber-text">
           {props.firstName}'s Schedule
         </span>
       </div>
       <div className="card-action">
+        <i
+          class="material-icons right blue-grey-text"
+          onClick={() => {
+            props.delChild(props.firstName)
+          }}
+        >
+          delete
+        </i>
         <Modal
           className="blue-grey darken-4"
           actions={
             <Button
-              className="blue-grey darken-4"
-              waves="light"
               modal="close"
               flat
             >
-              <span className="amber-text">Close</span>
+                <i className="material-icons blue-grey-text text-darken-4">close</i>
             </Button>
           }
-          trigger={
-            <a href="/#/">
-              <i className="material-icons amber-text">calendar_today</i>
-            </a>
-          }
+          trigger={<i className="material-icons amber-text">calendar_today</i>}
         >
           <Profile
             firstName={props.firstName}
             schedules={props.schedules}
+            newSched={props.newSched}
             key={props.id}
           />
         </Modal>
