@@ -5,70 +5,7 @@ import { Modal, Button } from 'react-materialize'
 
 export default class App extends React.Component {
   state = {
-    children: [
-      {
-        id: 1,
-        firstName: 'Bella',
-        lastName: 'Laupama',
-        schedules: [
-          {
-            id: 1,
-            date: '25 December 2018',
-            parent: 'Chris',
-            activity: 'Christmas'
-          },
-          {
-            id: 2,
-            date: '31 December 2018',
-            parent: 'Laura',
-            activity: 'New Years Eve'
-          },
-          {
-            id: 3,
-            date: '15 Janurary 2019',
-            parent: 'Mischa',
-            activity: 'Singapore Trip'
-          },
-          {
-            id: 4,
-            date: '25 Janurary 2019',
-            parent: 'Chris',
-            activity: "Chris's Birthday Party"
-          },
-          {
-            id: 5,
-            date: '7 Feburary 2019',
-            parent: 'Chris',
-            activity: "Bella's Birthday Party"
-          }
-        ]
-      },
-      {
-        id: 2,
-        firstName: 'Cara',
-        lastName: 'Malane',
-        schedules: [
-          {
-            id: 1,
-            date: '25 December 2018',
-            parent: 'Chris',
-            activity: 'Christmas'
-          },
-          {
-            id: 2,
-            date: '31 December 2018',
-            parent: 'Laura',
-            activity: 'New Years Eve'
-          },
-          {
-            id: 1,
-            date: '15 Janurary 2019',
-            parent: 'Mischa',
-            activity: 'Singapore Trip'
-          }
-        ]
-      }
-    ]
+    children: []
   }
 
   newChild = child => {
@@ -90,12 +27,12 @@ export default class App extends React.Component {
     })
   }
 
-  newSched = (id, schedule) => {
+  addSched = (id, schedule) => {
     const newSched = this.state.children.map(child => {
       if (child.id !== id) return child
       return {
         ...child,
-        schedules: schedule
+        schedules: [...child.schedules, schedule]
       }
     })
     this.setState({ children: newSched })
@@ -113,9 +50,10 @@ export default class App extends React.Component {
               return (
                 <ProfileCard
                   delChild={this.delChild}
-                  newSched={this.newSched}
+                  addSched={this.addSched}
                   firstName={child.firstName}
                   schedules={child.schedules}
+                  id={child.id}
                   key={child.id}
                 />
               )
@@ -137,7 +75,7 @@ export default class App extends React.Component {
                     }
                     trigger={
                       <a href="/#/">
-                        <i className="material-icons amber-text">add</i>
+                        <i className="material-icons amber-text">person_add</i>
                       </a>
                     }
                   >

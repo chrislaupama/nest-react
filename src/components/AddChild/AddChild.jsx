@@ -5,14 +5,7 @@ export default class AddChild extends React.Component {
   state = {
     firstName: '',
     lastName: '',
-    schedules: [
-      {
-        id: 1,
-        date: '',
-        parent: '',
-        activity: ''
-      }
-    ]
+    schedules: []
   }
 
   handleChange = e => {

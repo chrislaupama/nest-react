@@ -9,7 +9,7 @@ const ScheduleList = props => (
         </i>
         <span className="title amber-text">{props.date}</span>
         <p>
-          <strong>Parent:</strong> {props.parent}
+          <strong>With:</strong> {props.parent}
         </p>
         <p>
           <strong>Activity:</strong> {props.activity}
