@@ -71,6 +71,13 @@ export default class App extends React.Component {
     this.setState({ children: newSched })
   }
 
+  delSched = (firstName, date) => {
+    const children = this.state.children
+    const findChild = children.find(child => child.firstName === firstName)
+    const newSched = findChild.schedules.filter(sched => sched.date !== date)
+    findChild.schedules = newSched
+  }
+
   render() {
     return (
       <div className="container">
@@ -84,6 +91,7 @@ export default class App extends React.Component {
                 <ProfileCard
                   delChild={this.delChild}
                   addSched={this.addSched}
+                  delSched={this.delSched}
                   firstName={child.firstName}
                   lastName={child.lastName}
                   schedules={child.schedules}
