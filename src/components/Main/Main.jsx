@@ -86,10 +86,26 @@ export default class App extends React.Component {
           if (schedule.date === date) {
             child.schedules.splice(k, 1)
           }
-          this.setState({children})
+          this.setState({ children })
         }
       }
     }
+  }
+
+  editChild = (first, last, prof) => {
+    var updatedChild = {
+      firstName: first,
+      lastName: last,
+      profile: prof
+    }
+    var children = this.state.children
+
+    for (var i = 0; i < children.length; i++) {
+      if (children[i].firstName === first) {
+        children[i] = updatedChild
+      }
+    }
+    this.setState({ children })
   }
 
   render() {
@@ -104,6 +120,7 @@ export default class App extends React.Component {
               return (
                 <ProfileCard
                   delChild={this.delChild}
+                  editChild={this.editChild}
                   addSched={this.addSched}
                   delSched={this.delSched}
                   firstName={child.firstName}
