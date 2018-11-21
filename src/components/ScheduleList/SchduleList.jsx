@@ -12,9 +12,16 @@ const ScheduleList = props => (
           With: <strong>{props.parent}</strong>
         </p>
           Activity: <strong>{props.activity}</strong>
-        <a href="#!" className="secondary-content">
-          <i className="material-icons blue-grey-text">delete</i>
-        </a>
+        <span className="secondary-content">
+        <i
+          class="material-icons right blue-grey-text"
+          onClick={() => {
+            props.delSched(props.firstName, props.date)
+          }}
+        >
+          delete
+        </i>
+        </span>
       </li>
     </ul>
   </React.Fragment>

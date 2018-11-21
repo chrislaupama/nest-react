@@ -8,8 +8,8 @@ const ProfileCard = props => (
     <div className="card blue-grey darken-2 z-depth-4">
       <div className="card-content">
         <span className="card-title amber-text">
-        {props.firstName}'s Schedule 
-        <i class="right amber-text material-icons">{props.profile}</i>
+          {props.firstName}'s Schedule
+          <i class="right amber-text material-icons">{props.profile}</i>
         </span>
       </div>
       <div className="card-action">
@@ -30,7 +30,11 @@ const ProfileCard = props => (
               </i>
             </Button>
           }
-          trigger={<i className="material-icons right blue-grey-text text-lighten-2">add</i>}
+          trigger={
+            <i className="material-icons right blue-grey-text text-lighten-2">
+              add
+            </i>
+          }
         >
           <AddSched addSched={props.addSched} id={props.id} />
         </Modal>
@@ -46,6 +50,7 @@ const ProfileCard = props => (
           trigger={<i className="material-icons amber-text">calendar_today</i>}
         >
           <Profile
+            delSched={props.delSched}
             firstName={props.firstName}
             lastName={props.lastName}
             schedules={props.schedules}

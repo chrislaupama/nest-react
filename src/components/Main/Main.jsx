@@ -71,6 +71,27 @@ export default class App extends React.Component {
     this.setState({ children: newSched })
   }
 
+  delSched = (firstName, date) => {
+    var children = this.state.children
+
+    for (var i = 0; i < children.length; i++) {
+      var child = this.state.children[i]
+
+      if (child.firstName == firstName) {
+        //Loop through the schedules
+        for (var k = 0; k < child.schedules.length; k++) {
+          var schedule = child.schedules[k]
+
+          //remove schedule if date == date
+          if (schedule.date == date) {
+            child.schedules.splice(k, 1)
+          }
+          this.setState({children})
+        }
+      }
+    }
+  }
+
   render() {
     return (
       <div className="container">
@@ -84,6 +105,7 @@ export default class App extends React.Component {
                 <ProfileCard
                   delChild={this.delChild}
                   addSched={this.addSched}
+                  delSched={this.delSched}
                   firstName={child.firstName}
                   lastName={child.lastName}
                   schedules={child.schedules}
