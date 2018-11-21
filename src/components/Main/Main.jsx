@@ -85,6 +85,7 @@ export default class App extends React.Component {
                   delChild={this.delChild}
                   addSched={this.addSched}
                   firstName={child.firstName}
+                  lastName={child.lastName}
                   schedules={child.schedules}
                   profile={child.profile}
                   id={child.id}
@@ -95,7 +96,7 @@ export default class App extends React.Component {
             <div className="col s12 m6">
               <div className="card blue-grey darken-3 z-depth-0">
                 <div className="card-content">
-                  <span className="card-title amber-text">Add Child</span>
+                  <span className="card-title amber-text">Add Profile</span>
                 </div>
                 <div className="card-action">
                   <Modal
