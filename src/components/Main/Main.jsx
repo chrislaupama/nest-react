@@ -92,20 +92,22 @@ export default class App extends React.Component {
     }
   }
 
-  editChild = (first, last, prof) => {
+  editChild = (id, first, last, prof) => {
     var updatedChild = {
       firstName: first,
       lastName: last,
       profile: prof
     }
-    var children = this.state.children
 
-    for (var i = 0; i < children.length; i++) {
-      if (children[i].firstName === first) {
-        children[i] = updatedChild
-      }
-    }
-    this.setState({ children })
+    this.setState(prevState => {
+      const children = [...prevState.children]
+      const childIndex = children.findIndex(child => child.id === id)
+
+      children[childIndex] = { ...children[childIndex], ...updatedChild }
+
+      return { children }
+    })
+    console.log(this.state)
   }
 
   render() {
