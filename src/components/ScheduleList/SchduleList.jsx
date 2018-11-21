@@ -13,7 +13,14 @@ const ScheduleList = props => (
         </p>
           Activity: <strong>{props.activity}</strong>
         <a href="#!" className="secondary-content">
-          <i className="material-icons blue-grey-text">delete</i>
+        <i
+          class="material-icons right blue-grey-text"
+          onClick={() => {
+            props.delSched(props.firstName, props.date)
+          }}
+        >
+          delete
+        </i>
         </a>
       </li>
     </ul>
