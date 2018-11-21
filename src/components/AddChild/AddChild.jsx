@@ -58,13 +58,13 @@ export default class AddChild extends React.Component {
             </div>
           </div>
           <Input
+            placeholder="Profile Type"
             type="select"
-            defaultValue="child"
             className="amber-text"
           >
-            <option className="amber-text" name="child" value={this.state.profile}>Child</option>
-            <option className="amber-text" name="pets" value={this.state.profile}>Pet</option>
-            <option className="amber-text" name="person" value={this.state.profile}>Person</option>
+            <option className="amber-text" name="child" value={this.state.profile} onChange={this.handleChange}>Child</option>
+            <option className="amber-text" name="pets" value={this.state.profile} onChange={this.handleChange}>Pet</option>
+            <option className="amber-text" name="person" value={this.state.profile} onChange={this.handleChange}>Person</option>
           </Input>
           <div className="center">
             <button type="submit" className="btn-floating btn-large amber">
