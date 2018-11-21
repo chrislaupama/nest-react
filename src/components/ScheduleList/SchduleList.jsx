@@ -9,11 +9,9 @@ const ScheduleList = props => (
         </i>
         <span className="title amber-text">{props.date}</span>
         <p>
-          <strong>With:</strong> {props.parent}
+          With: <strong>{props.parent}</strong>
         </p>
-        <p>
-          <strong>Activity:</strong> {props.activity}
-        </p>
+          Activity: <strong>{props.activity}</strong>
         <a href="#!" className="secondary-content">
           <i className="material-icons blue-grey-text">delete</i>
         </a>

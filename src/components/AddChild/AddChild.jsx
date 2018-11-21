@@ -6,6 +6,7 @@ export default class AddChild extends React.Component {
   state = {
     firstName: '',
     lastName: '',
+    profile: '',
     schedules: []
   }
 
@@ -23,7 +24,8 @@ export default class AddChild extends React.Component {
     // Clear the state to clear the form
     this.setState({
       firstName: '',
-      lastName: ''
+      lastName: '',
+      profile: ''
     })
   }
 
@@ -57,15 +59,19 @@ export default class AddChild extends React.Component {
               <label for="last_name">Last Name</label>
             </div>
           </div>
-          <Input
-            placeholder="Profile Type"
-            type="select"
-            className="amber-text"
-          >
-            <option className="amber-text" name="child" value={this.state.profile} onChange={this.handleChange}>Child</option>
-            <option className="amber-text" name="pets" value={this.state.profile} onChange={this.handleChange}>Pet</option>
-            <option className="amber-text" name="person" value={this.state.profile} onChange={this.handleChange}>Person</option>
-          </Input>
+
+              <Input
+                className="amber-text"
+                type="select"
+                name="profile"
+                value={this.state.profile}
+                onChange={this.handleChange}
+              >
+                <option value="child_care">Child</option>
+                <option value="pets">Pet</option>
+                <option value="face">Person</option>
+              </Input>
+
           <div className="center">
             <button type="submit" className="btn-floating btn-large amber">
               <i className="material-icons blue-grey-text text-darken-4">add</i>
