@@ -12,7 +12,7 @@ const ScheduleList = props => (
           With: <strong>{props.parent}</strong>
         </p>
           Activity: <strong>{props.activity}</strong>
-        <a href="#!" className="secondary-content">
+        <span className="secondary-content">
         <i
           class="material-icons right blue-grey-text"
           onClick={() => {
@@ -21,7 +21,7 @@ const ScheduleList = props => (
         >
           delete
         </i>
-        </a>
+        </span>
       </li>
     </ul>
   </React.Fragment>
