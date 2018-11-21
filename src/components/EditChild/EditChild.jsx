@@ -2,8 +2,9 @@ import React from 'react'
 import './editchild.css'
 import { Input } from 'react-materialize'
 
-export default class AddChild extends React.Component {
+export default class EditChild extends React.Component {
   state = {
+    id: this.props.id,
     firstName: '',
     lastName: '',
     profile: '',
@@ -17,7 +18,7 @@ export default class AddChild extends React.Component {
 
   submitHandler = e => {
     e.preventDefault()
-    this.props.editChild(this.state.firstName, this.state.lastName, this.state.profile)
+    this.props.editChild(this.state.id, this.state.firstName, this.state.lastName, this.state.profile)
     // Final validation before submitting to server
     console.log('SUBMITTED:', this.state)
     // Clear the state to clear the form
@@ -43,7 +44,6 @@ export default class AddChild extends React.Component {
                 onChange={this.handleChange}
                 id="first_name"
               />
-              <label for="first_name">First Name</label>
             </div>
           </div>
           <div className="row">
@@ -57,7 +57,6 @@ export default class AddChild extends React.Component {
                 onChange={this.handleChange}
                 id="last_name"
               />
-              <label for="last_name">Last Name</label>
             </div>
           </div>
 
