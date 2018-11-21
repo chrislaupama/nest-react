@@ -1,5 +1,6 @@
 import React from 'react'
 import './addchild.css'
+import { Input } from 'react-materialize'
 
 export default class AddChild extends React.Component {
   state = {
@@ -28,46 +29,50 @@ export default class AddChild extends React.Component {
 
   render() {
     return (
-          <div className="col s12 m6">
-            <form className="col s12" onSubmit={this.submitHandler}>
-              <div className="row">
-                <div className="input-field col s12 input-margin">
-                  <input
-                    className="amber-text"
-                    type="text"
-                    name="firstName"
-                    value={this.state.firstName}
-                    onChange={this.handleChange}
-                    id="first_name"
-                  />
-                  <label for="first_name">First Name</label>
-                </div>
-              </div>
-              <div className="row">
-                <div className="input-field col s12 input-margin">
-                  <input
-                    className="amber-text"
-                    type="text"
-                    name="lastName"
-                    value={this.state.lastName}
-                    onChange={this.handleChange}
-                    id="last_name"
-                  />
-                  <label for="last_name">Last Name</label>
-                </div>
-              </div>
-              <div className="center">
-                <button
-                  type="submit"
-                  className="btn-floating btn-large amber"
-                >
-                  <i className="material-icons blue-grey-text text-darken-4">
-                    add
-                  </i>
-                </button>
-              </div>
-            </form>
+      <div className="col s12 m6">
+        <form className="col s12" onSubmit={this.submitHandler}>
+          <div className="row">
+            <div className="input-field col s12 input-margin">
+              <input
+                className="amber-text"
+                type="text"
+                name="firstName"
+                value={this.state.firstName}
+                onChange={this.handleChange}
+                id="first_name"
+              />
+              <label for="first_name">First Name</label>
+            </div>
           </div>
+          <div className="row">
+            <div className="input-field col s12 input-margin">
+              <input
+                className="amber-text"
+                type="text"
+                name="lastName"
+                value={this.state.lastName}
+                onChange={this.handleChange}
+                id="last_name"
+              />
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <Input
+            placeholder="Profile Type"
+            type="select"
+            className="amber-text"
+          >
+            <option className="amber-text" name="child" value={this.state.profile} onChange={this.handleChange}>Child</option>
+            <option className="amber-text" name="pets" value={this.state.profile} onChange={this.handleChange}>Pet</option>
+            <option className="amber-text" name="person" value={this.state.profile} onChange={this.handleChange}>Person</option>
+          </Input>
+          <div className="center">
+            <button type="submit" className="btn-floating btn-large amber">
+              <i className="material-icons blue-grey-text text-darken-4">add</i>
+            </button>
+          </div>
+        </form>
+      </div>
     )
   }
 }

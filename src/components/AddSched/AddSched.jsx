@@ -55,7 +55,7 @@ export default class AddSched extends React.Component {
                 onChange={this.handleChange}
                 id="parent"
               />
-              <label for="parent">Caregiver</label>
+              <label for="parent">Caregiver(s)</label>
             </div>
           </div>
           <div className="row">
