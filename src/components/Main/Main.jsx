@@ -21,7 +21,7 @@ export default class App extends React.Component {
             id: 2,
             date: '28 December, 2018',
             parent: 'Mischa',
-            activity: 'Christmas with Malane whanau'
+            activity: 'Christmas with Malane Whanau'
           },
           {
             id: 3,
