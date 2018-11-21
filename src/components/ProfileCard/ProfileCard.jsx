@@ -23,28 +23,23 @@ const ProfileCard = props => (
         <Modal
           className="blue-grey darken-4"
           actions={
-            <Button
-              modal="close"
-              flat
-            >
-                <i className="material-icons blue-grey-text text-darken-4">close</i>
+            <Button modal="close" flat>
+              <i className="material-icons blue-grey-text text-darken-4">
+                close
+              </i>
             </Button>
           }
           trigger={<i className="material-icons right blue-grey-text">add</i>}
         >
-          <AddSched
-            addSched={props.addSched}
-            id={props.id}
-          />
+          <AddSched addSched={props.addSched} id={props.id} />
         </Modal>
         <Modal
           className="blue-grey darken-4"
           actions={
-            <Button
-              modal="close"
-              flat
-            >
-                <i className="material-icons blue-grey-text text-darken-4">close</i>
+            <Button modal="close" flat>
+              <i className="material-icons blue-grey-text text-darken-4">
+                close
+              </i>
             </Button>
           }
           trigger={<i className="material-icons amber-text">calendar_today</i>}
