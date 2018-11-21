@@ -3,7 +3,7 @@ import React from 'react'
 const ScheduleList = props => (
   <React.Fragment>
     <ul className="collection">
-      <li className="collection-item avatar blue-grey darken-2 white-text">
+      <li className="collection-item avatar blue-grey darken-3 white-text">
         <i className="material-icons circle amber lighten-1 blue-grey-text text-darken-3">
           perm_contact_calendar
         </i>
