@@ -47,7 +47,9 @@ const ProfileCard = props => (
         >
           <Profile
             firstName={props.firstName}
+            lastName={props.lastName}
             schedules={props.schedules}
+            profile={props.profile}
             key={props.id}
           />
         </Modal>
