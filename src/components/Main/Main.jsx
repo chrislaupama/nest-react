@@ -53,6 +53,7 @@ export default class App extends React.Component {
                   addSched={this.addSched}
                   firstName={child.firstName}
                   schedules={child.schedules}
+                  profile={child.profile}
                   id={child.id}
                   key={child.id}
                 />
