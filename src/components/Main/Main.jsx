@@ -10,6 +10,7 @@ export default class App extends React.Component {
         id: 1,
         firstName: 'Bella',
         lastName: 'Laupama',
+        profile: 'child_care',
         schedules: [
           {
             id: 1,
