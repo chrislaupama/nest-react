@@ -72,10 +72,24 @@ export default class App extends React.Component {
   }
 
   delSched = (firstName, date) => {
-    const children = this.state.children
-    const findChild = children.find(child => child.firstName === firstName)
-    const newSched = findChild.schedules.filter(sched => sched.date !== date)
-    findChild.schedules = newSched
+    var children = this.state.children
+
+    for (var i = 0; i < children.length; i++) {
+      var child = this.state.children[i]
+
+      if (child.firstName == firstName) {
+        //Loop through the schedules
+        for (var k = 0; k < child.schedules.length; k++) {
+          var schedule = child.schedules[k]
+
+          //remove schedule if date == date
+          if (schedule.date == date) {
+            child.schedules.splice(k, 1)
+          }
+          this.setState({children})
+        }
+      }
+    }
   }
 
   render() {
