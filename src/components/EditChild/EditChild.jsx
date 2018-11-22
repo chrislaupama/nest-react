@@ -19,9 +19,7 @@ export default class EditChild extends React.Component {
   submitHandler = e => {
     e.preventDefault()
     this.props.editChild(this.state.id, this.state.firstName, this.state.lastName, this.state.profile)
-    // Final validation before submitting to server
     console.log('SUBMITTED:', this.state)
-    // Clear the state to clear the form
     this.setState({
       firstName: '',
       lastName: '',
