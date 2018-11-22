@@ -77,19 +77,37 @@ export default class App extends React.Component {
     for (var i = 0; i < children.length; i++) {
       var child = this.state.children[i]
 
-      if (child.firstName == firstName) {
+      if (child.firstName === firstName) {
         //Loop through the schedules
         for (var k = 0; k < child.schedules.length; k++) {
           var schedule = child.schedules[k]
 
           //remove schedule if date == date
-          if (schedule.date == date) {
+          if (schedule.date === date) {
             child.schedules.splice(k, 1)
           }
-          this.setState({children})
+          this.setState({ children })
         }
       }
     }
+  }
+
+  editChild = (id, first, last, prof) => {
+    var updatedChild = {
+      firstName: first,
+      lastName: last,
+      profile: prof
+    }
+
+    this.setState(prevState => {
+      const children = [...prevState.children]
+      const childIndex = children.findIndex(child => child.id === id)
+
+      children[childIndex] = { ...children[childIndex], ...updatedChild }
+
+      return { children }
+    })
+    console.log(this.state)
   }
 
   render() {
@@ -104,6 +122,7 @@ export default class App extends React.Component {
               return (
                 <ProfileCard
                   delChild={this.delChild}
+                  editChild={this.editChild}
                   addSched={this.addSched}
                   delSched={this.delSched}
                   firstName={child.firstName}
