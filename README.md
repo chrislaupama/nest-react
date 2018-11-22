@@ -20,27 +20,28 @@ NEST is an application developed to help parents and caregivers keep the daily, 
     - [ ] Parents are...
     - [ ] Related contacts (friends/parents of friends)
   - [x] Schedule
-  - [ ] Activities & Expenses
+  - [x] Activities
+  - [ ] Expenses
 - [x] Remove child
-- [ ] Update child
+- [x] Update child
 
 ## Parent
-- [ ] Add parent
+- [x] Add parent
   - [ ] Profile:
     - [ ] Children are...
     - [ ] Contact details
     - [ ] Related contacts (partners, friends, family)
   - [ ] Schedule
-- [ ] Remove adult 
-- [ ] Update adult
+- [x] Remove adult 
+- [x] Update adult
 
 ## Schedule
 - [x] Add schedule
   - [x] to child
   - [ ] to parent
-- [ ] Remove schedule
-  - [ ] from child
-  - [ ] from parent
+- [x] Remove schedule
+  - [x] from child
+  - [x] from parent
 - [ ] Update schedule
   - [ ] of child
   - [ ] of parent
