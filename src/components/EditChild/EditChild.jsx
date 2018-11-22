@@ -5,9 +5,9 @@ import { Input } from 'react-materialize'
 export default class EditChild extends React.Component {
   state = {
     id: this.props.id,
-    firstName: '',
-    lastName: '',
-    profile: '',
+    firstName: this.props.firstName,
+    lastName: this.props.lastName,
+    profile: this.props.profile,
   }
 
   handleChange = e => {
@@ -19,9 +19,7 @@ export default class EditChild extends React.Component {
   submitHandler = e => {
     e.preventDefault()
     this.props.editChild(this.state.id, this.state.firstName, this.state.lastName, this.state.profile)
-    // Final validation before submitting to server
     console.log('SUBMITTED:', this.state)
-    // Clear the state to clear the form
     this.setState({
       firstName: '',
       lastName: '',
