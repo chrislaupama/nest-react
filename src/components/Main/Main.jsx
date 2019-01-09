@@ -5,40 +5,7 @@ import { Modal, Button } from 'react-materialize'
 
 export default class App extends React.Component {
   state = {
-    children: [
-      {
-        id: 1,
-        firstName: 'Bella',
-        lastName: 'Laupama',
-        profile: 'child_care',
-        schedules: [
-          {
-            id: 1,
-            date: '25 December, 2018',
-            parent: 'Chris',
-            activity: 'Christmas'
-          },
-          {
-            id: 2,
-            date: '28 December, 2018',
-            parent: 'Mischa',
-            activity: 'Christmas with Malane Whanau'
-          },
-          {
-            id: 3,
-            date: '31 December, 2018',
-            parent: 'Laura',
-            activity: 'New Years Eve'
-          },
-          {
-            id: 4,
-            date: '1 January, 2019',
-            parent: 'Laura',
-            activity: 'New Years Day'
-          }
-        ]
-      }
-    ]
+    children: []
   }
 
   newChild = child => {
